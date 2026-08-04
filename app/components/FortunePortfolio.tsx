@@ -30,30 +30,30 @@ type Pill = {
   delay: number;
 };
 
-const THEMES: Record<'earthy' | 'candy', Record<string, string>> = {
-  earthy: {
-    '--bg': '#e9dcc4',
-    '--panel': '#f6efe1',
-    '--ink': '#2c2620',
-    '--muted': '#8a7d68',
-    '--line': '#d8c9ac',
-    '--a1': '#c8724d',
-    '--a2': '#879a52',
-    '--a3': '#e0a83e',
-    '--a4': '#b5643f',
-    '--grid': 'rgba(44,38,32,.055)',
+const THEMES: Record<'lavender' | 'citrus', Record<string, string>> = {
+  lavender: {
+    '--bg': '#f6f1ff',
+    '--panel': '#ffffff',
+    '--ink': '#201c2b',
+    '--muted': '#8a8398',
+    '--line': '#e7e0f7',
+    '--a1': '#6605de',
+    '--a2': '#2f9e5c',
+    '--a3': '#fdce1c',
+    '--a4': '#b889f2',
+    '--grid': 'rgba(32,28,43,.05)',
   },
-  candy: {
-    '--bg': '#fbe6ee',
-    '--panel': '#fff7fb',
-    '--ink': '#3a2b34',
-    '--muted': '#b08a9c',
-    '--line': '#f4d3e1',
-    '--a1': '#e685b3',
-    '--a2': '#7ecbb6',
-    '--a3': '#f2c85f',
-    '--a4': '#8fb2ee',
-    '--grid': 'rgba(58,43,52,.06)',
+  citrus: {
+    '--bg': '#fff8ec',
+    '--panel': '#ffffff',
+    '--ink': '#241f13',
+    '--muted': '#96895f',
+    '--line': '#f2e4c4',
+    '--a1': '#d97706',
+    '--a2': '#6605de',
+    '--a3': '#2f9e5c',
+    '--a4': '#ff8a65',
+    '--grid': 'rgba(36,31,19,.05)',
   },
 };
 
@@ -133,43 +133,31 @@ const JOBS: Job[] = [
 ];
 
 const WHAT_I_DO: ({ type: 'pill' } & Pill | { type: 'sep' })[] = [
-  { type: 'pill', label: "I'm Fortune", bg: '#f7d0dc', color: '#b03a5b', rot: -3, duration: 3.2, delay: 0 },
+  { type: 'pill', label: "I'm Fortune", bg: '#ece0fb', color: '#6605de', rot: -3, duration: 3.2, delay: 0 },
   { type: 'sep' },
-  { type: 'pill', label: 'UX Designer', bg: '#f7ddbf', color: '#b56a2e', rot: 2, duration: 3.6, delay: 0.3 },
-  { type: 'pill', label: 'I vibe code', bg: '#f6e6a4', color: '#8f7212', rot: -2, duration: 3.9, delay: 0.15 },
+  { type: 'pill', label: 'UX Designer', bg: '#fff2c2', color: '#8a6b00', rot: 2, duration: 3.6, delay: 0.3 },
+  { type: 'pill', label: 'I vibe code', bg: '#dbf5e6', color: '#12805a', rot: -2, duration: 3.9, delay: 0.15 },
   { type: 'sep' },
-  { type: 'pill', label: 'AI Design Engineer', bg: '#ddccf5', color: '#6a45b0', rot: 3, duration: 3.4, delay: 0.5 },
-  { type: 'pill', label: 'Content Creator', bg: '#c7ebd4', color: '#2f7d4f', rot: -2, duration: 3.7, delay: 0.2 },
+  { type: 'pill', label: 'AI Design Engineer', bg: '#ffe1d6', color: '#c2542f', rot: 3, duration: 3.4, delay: 0.5 },
+  { type: 'pill', label: 'Content Creator', bg: '#dde9fb', color: '#2450b0', rot: -2, duration: 3.7, delay: 0.2 },
   { type: 'sep' },
-  { type: 'pill', label: 'I design', bg: '#f7d5c6', color: '#c05a3a', rot: 2, duration: 3.3, delay: 0.4 },
+  { type: 'pill', label: 'I design', bg: '#fbe3ee', color: '#b23a73', rot: 2, duration: 3.3, delay: 0.4 },
 ];
 
 const SKILLS: Pill[] = [
-  { label: 'UX Research', bg: '#dcec9f', color: '#5f7d1e', rot: -3, duration: 3.5, delay: 0 },
-  { label: 'Visual Design', bg: '#f0c9dd', color: '#a83a6b', rot: 2, duration: 3.8, delay: 0.25 },
-  { label: 'Wireframing', bg: '#f6e6a4', color: '#8f7212', rot: -2, duration: 3.4, delay: 0.5 },
-  { label: 'AI Engineering', bg: '#c9d8f7', color: '#2f5bb0', rot: 3, duration: 3.9, delay: 0.15 },
-  { label: 'Vibe Coding', bg: '#dcec9f', color: '#5f7d1e', rot: -2, duration: 3.3, delay: 0.35 },
-  { label: 'Prototyping', bg: '#c9e9f7', color: '#2f7db0', rot: 2, duration: 3.6, delay: 0.45 },
+  { label: 'UX Research', bg: '#dbf5e6', color: '#12805a', rot: -3, duration: 3.5, delay: 0 },
+  { label: 'Visual Design', bg: '#fbe3ee', color: '#b23a73', rot: 2, duration: 3.8, delay: 0.25 },
+  { label: 'Wireframing', bg: '#fff2c2', color: '#8a6b00', rot: -2, duration: 3.4, delay: 0.5 },
+  { label: 'AI Engineering', bg: '#dde9fb', color: '#2450b0', rot: 3, duration: 3.9, delay: 0.15 },
+  { label: 'Vibe Coding', bg: '#ece0fb', color: '#6605de', rot: -2, duration: 3.3, delay: 0.35 },
+  { label: 'Prototyping', bg: '#ffe1d6', color: '#c2542f', rot: 2, duration: 3.6, delay: 0.45 },
 ];
-
-const MARQUEE_IMAGES = [
-  { file: 'melanin-muse-cover.png', alt: 'Melanin & Muse magazine cover illustration' },
-  { file: 'flower-vase.png', alt: 'Flower vase illustration' },
-  { file: 'sewmywears-styles.png', alt: 'SewMyWears landing page' },
-  { file: 'wave-productions.png', alt: 'Wave Productions landing page' },
-  { file: 'cryptotrybe.png', alt: 'CryptoTrybe landing page' },
-  { file: 'floral-portrait.png', alt: 'Floral portrait illustration' },
-  { file: 'anchor-pathway.png', alt: 'Anchor Pathway landing page' },
-];
-
-const MARQUEE_SEQUENCE = Array.from({ length: 5 }, () => MARQUEE_IMAGES).flat();
 
 const KONAMI_CODE = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 
 export default function FortunePortfolio() {
   const [active, setActive] = useState('home');
-  const [theme, setTheme] = useState<'earthy' | 'candy'>('earthy');
+  const [theme, setTheme] = useState<'lavender' | 'citrus'>('lavender');
   const [spin, setSpin] = useState(false);
   const [eggFound, setEggFound] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -183,6 +171,7 @@ export default function FortunePortfolio() {
   const cursorDotRef = useRef<HTMLDivElement>(null);
   const cursorRingRef = useRef<HTMLDivElement>(null);
   const confettiRef = useRef<HTMLDivElement>(null);
+  const projectMediaRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const logoClicksRef = useRef(0);
   const gameActiveRef = useRef(false);
@@ -288,6 +277,35 @@ export default function FortunePortfolio() {
     moveTarget();
   }, [moveTarget]);
 
+  // magnetic hover: buttons drift toward the cursor, then spring back
+  const magneticMove = useCallback((e: { currentTarget: HTMLElement; clientX: number; clientY: number }) => {
+    const el = e.currentTarget;
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    el.style.transition = 'transform 0.08s ease';
+    el.style.transform = `translate(${x * 0.28}px, ${y * 0.28}px)`;
+  }, []);
+
+  const magneticLeave = useCallback((e: { currentTarget: HTMLElement }) => {
+    const el = e.currentTarget;
+    el.style.transition = 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)';
+    el.style.transform = 'translate(0px, 0px)';
+  }, []);
+
+  // tilt hover: project media leans toward the cursor in 3D
+  const tiltMove = useCallback((e: { currentTarget: HTMLElement; clientX: number; clientY: number }) => {
+    const el = e.currentTarget;
+    const rect = el.getBoundingClientRect();
+    const px = (e.clientX - rect.left) / rect.width - 0.5;
+    const py = (e.clientY - rect.top) / rect.height - 0.5;
+    el.style.transform = `perspective(800px) rotateX(${py * -6}deg) rotateY(${px * 6}deg) scale(1.02)`;
+  }, []);
+
+  const tiltLeave = useCallback((e: { currentTarget: HTMLElement }) => {
+    e.currentTarget.style.transform = '';
+  }, []);
+
   // apply theme CSS custom properties whenever theme changes
   useEffect(() => {
     const vars = THEMES[theme];
@@ -295,11 +313,32 @@ export default function FortunePortfolio() {
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
-    setTheme((t) => (t === 'earthy' ? 'candy' : 'earthy'));
+    setTheme((t) => (t === 'lavender' ? 'citrus' : 'lavender'));
   }, []);
 
   const toggleMenu = useCallback(() => {
     setMenuOpen((o) => !o);
+  }, []);
+
+  // project media scroll-tilt: cards unfold from a tilted, scaled-down state to flat
+  // as they travel up through the viewport, re-computed every frame while scrolling
+  useEffect(() => {
+    let raf = 0;
+    const update = () => {
+      const vh = window.innerHeight;
+      projectMediaRefs.current.forEach((el) => {
+        if (!el) return;
+        const top = el.getBoundingClientRect().top;
+        const t = Math.min(Math.max((vh - top) / (vh * 0.9), 0), 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        const scale = 0.85 + 0.15 * eased;
+        const tilt = 28 * (1 - eased);
+        el.style.transform = `scale(${scale}) rotateX(${tilt}deg)`;
+      });
+      raf = requestAnimationFrame(update);
+    };
+    raf = requestAnimationFrame(update);
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   // one-time mount effects: custom cursor, drag, konami code, scroll spy, scroll reveals
@@ -419,7 +458,7 @@ export default function FortunePortfolio() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const themeLabel = theme === 'earthy' ? 'candy mode' : 'earthy mode';
+  const themeLabel = theme === 'lavender' ? 'citrus mode' : 'lavender mode';
 
   return (
     <div className="fortune">
@@ -467,11 +506,21 @@ export default function FortunePortfolio() {
               good conversation. Currently making fintech friendlier at a startup you haven&apos;t heard of yet.
             </p>
             <div className="hero-ctas">
-              <button className="btn btn-primary btn-lift" onClick={goTo('work')}>
+              <button
+                className="btn"
+                onClick={goTo('work')}
+                onPointerMove={magneticMove}
+                onPointerLeave={magneticLeave}
+              >
                 see the work →
               </button>
-              <button className="btn btn-secondary" onClick={goTo('contact')}>
-                say hi 👋
+              <button
+                className="btn"
+                onClick={goTo('contact')}
+                onPointerMove={magneticMove}
+                onPointerLeave={magneticLeave}
+              >
+                say hi
               </button>
             </div>
 
@@ -489,17 +538,6 @@ export default function FortunePortfolio() {
           </div>
         </section>
 
-        {/* MARQUEE */}
-        <div className="marquee-wrap">
-          <div className="marquee-track">
-            {MARQUEE_SEQUENCE.map((img, i) => (
-              <div key={i} className="marquee-item">
-                <img src={`/assets/${img.file}`} alt={img.alt} />
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* WORK */}
         <section id="work" data-screen-label="Work" className="work-section">
           <h1 data-reveal className="section-title reveal">
@@ -510,14 +548,16 @@ export default function FortunePortfolio() {
             to peek.
           </p>
           <div data-stagger className="project-list">
-            {PROJECTS.map((p) => (
+            {PROJECTS.map((p, i) => (
               <article key={p.title} data-reveal className="project reveal-article">
-                <div className="project-media">
-                  {p.img ? (
-                    <img src={p.img} alt={p.title} />
-                  ) : (
-                    <span className="project-media-placeholder">{'// '}{p.shot}</span>
-                  )}
+                <div className="project-media-wrap" ref={(el) => { projectMediaRefs.current[i] = el; }}>
+                  <div className="project-media" onPointerMove={tiltMove} onPointerLeave={tiltLeave}>
+                    {p.img ? (
+                      <img src={p.img} alt={p.title} />
+                    ) : (
+                      <span className="project-media-placeholder">{'// '}{p.shot}</span>
+                    )}
+                  </div>
                 </div>
                 <div className="project-header">
                   <div className="project-heading">
@@ -567,7 +607,12 @@ export default function FortunePortfolio() {
                   <div className="stats-num">50+</div>
                   <div className="stats-label">CLIENTS</div>
                 </div>
-                <button className="stats-cta" onClick={goTo('contact')}>
+                <button
+                  className="stats-cta"
+                  onClick={goTo('contact')}
+                  onPointerMove={magneticMove}
+                  onPointerLeave={magneticLeave}
+                >
                   Let&apos;s connect ↗
                 </button>
               </div>
@@ -666,8 +711,8 @@ export default function FortunePortfolio() {
                 <p className="arena-idle-text">
                   last score: {gameScore} · best: {gameHigh}
                 </p>
-                <button className="btn btn-start btn-lift" onClick={startGame}>
-                  ▶ start smashing
+                <button className="btn" onClick={startGame}>
+                  start smashing
                 </button>
               </div>
             )}
@@ -696,7 +741,7 @@ export default function FortunePortfolio() {
           <div data-reveal className="resume-header reveal">
             <h1 className="resume-title">RÉSUMÉ</h1>
             <button className="btn-download" onClick={party}>
-              ⬇ download PDF
+              download PDF
             </button>
           </div>
           <h3 className="section-label">EXPERIENCE</h3>
@@ -734,7 +779,13 @@ export default function FortunePortfolio() {
             <br />
             STUFF.
           </h1>
-          <a href="mailto:hi@fortune.design" data-reveal className="contact-email reveal-cta">
+          <a
+            href="mailto:hi@fortune.design"
+            data-reveal
+            className="contact-email reveal-cta"
+            onPointerMove={magneticMove}
+            onPointerLeave={magneticLeave}
+          >
             hi@fortune.design
           </a>
           <div data-reveal className="contact-social-row reveal-cta">

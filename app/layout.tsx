@@ -1,19 +1,26 @@
 import type { Metadata } from "next";
-import { Space_Mono, Caveat } from "next/font/google";
+import { Crimson_Text, Fragment_Mono, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import "./fortune.css";
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
+const interTight = Inter_Tight({
+  variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const crimsonText = Crimson_Text({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
   style: ["normal", "italic"],
 });
 
-const caveat = Caveat({
-  variable: "--font-caveat",
+const fragmentMono = Fragment_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["400"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -30,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceMono.variable} ${caveat.variable} h-full antialiased`}
+      className={`${interTight.variable} ${crimsonText.variable} ${fragmentMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
