@@ -531,7 +531,6 @@ body {
   border-radius: 22px;
   overflow: hidden;
   background: var(--panel);
-  box-shadow: 0 28px 54px -22px rgba(32, 28, 43, 0.28);
   aspect-ratio: 16 / 10;
   display: flex;
   align-items: center;

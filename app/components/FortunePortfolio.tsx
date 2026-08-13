@@ -70,7 +70,7 @@ const PROJECTS: Project[] = [
     title: 'SewMyWears',
     year: '2025',
     url: 'https://sewmywears.com/',
-    img: '/assets/sewmywears-styles.png',
+    img: '/assets/sewmywears-home.jpg',
     tags: ['fashion', 'web', '0→1'],
     blurb:
       'The operating system for bespoke fashion. Order custom African wear through a transparent flow — guided measurements, verified tailors, and real-time order updates.',
