@@ -1,14 +1,14 @@
 :root {
-  --bg: #e5e5de;
-  --panel: #ffffff;
-  --ink: #201c2b;
-  --muted: #8a8398;
-  --line: #e7e0f7;
-  --a1: #6605de;
-  --a2: #2f9e5c;
+  --bg: #131118;
+  --panel: #1e1b26;
+  --ink: #f2eef9;
+  --muted: #a39bb0;
+  --line: #2c2836;
+  --a1: #a78bfa;
+  --a2: #34d399;
   --a3: #fdce1c;
-  --a4: #b889f2;
-  --grid: rgba(32, 28, 43, 0.05);
+  --a4: #c4b5fd;
+  --grid: rgba(255, 255, 255, 0.06);
 }
 
 * {
@@ -460,28 +460,6 @@ body {
   border: none;
   cursor: grab;
   user-select: none;
-}
-.hero-sticker-1 {
-  top: -8px;
-  right: 2%;
-  background: var(--a3);
-  color: var(--ink);
-  border-radius: 50%;
-  width: 112px;
-  height: 112px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: var(--font-serif), serif;
-  font-style: italic;
-  font-size: 23px;
-  line-height: 1;
-  font-weight: 700;
-  transform: rotate(-9deg);
-  box-shadow: 0 14px 28px -12px rgba(32, 28, 43, 0.4);
-  animation: riseIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-  animation-delay: 0.5s;
 }
 .hero-sticker-2 {
   top: 150px;
@@ -990,30 +968,6 @@ body {
   background: var(--a3);
   border-color: var(--a3);
 }
-.contact-sticker {
-  position: absolute;
-  top: 20px;
-  left: 6%;
-  background: var(--a3);
-  color: var(--ink);
-  border: none;
-  border-radius: 50%;
-  width: 96px;
-  height: 96px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: var(--font-serif), serif;
-  font-style: italic;
-  font-size: 19px;
-  font-weight: 700;
-  transform: rotate(-8deg);
-  box-shadow: 0 14px 28px -12px rgba(32, 28, 43, 0.4);
-  cursor: grab;
-  user-select: none;
-}
-
 /* footer */
 .footer {
   border-top: 1px solid var(--line);

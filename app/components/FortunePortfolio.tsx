@@ -535,11 +535,6 @@ export default function FortunePortfolio() {
               </button>
             </div>
 
-            <div data-drag data-hero-sticker data-rot="-9" className="hero-sticker hero-sticker-1">
-              drag
-              <br />
-              me!
-            </div>
             <div data-drag data-hero-sticker data-rot="7" className="hero-sticker hero-sticker-2">
               ● open for work · 2026
             </div>
@@ -754,13 +749,6 @@ export default function FortunePortfolio() {
             >
               linkedin ↗
             </a>
-          </div>
-          <div data-drag data-hero-sticker data-rot="-8" className="contact-sticker">
-            reply
-            <br />
-            within
-            <br />
-            24h!
           </div>
         </section>
 
